@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Layouts</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(2,auto);
+            grid-template-areas: 
+            'section section section section'
+            'other other other other'
+            'footer footer footer footer'
+            ;
+        }
+        .box{
+            background-color: yellow;
+            border: 2px solid black;
+            
+        }
+        #section{
+            grid-area: section;
+        }
+        #other{
+            grid-area: other;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="section" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quae. Voluptatibus officiis minima maxime aut, voluptates nemo blanditiis eaque, tempore, quae inventore minus cumque. Illo velit ipsam repellat aut reprehenderit!
+        </div> 
+        <div id="other" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa. Itaque magni ullam quia nobis hic officiis esse suscipit velit, nulla nam est alias, fugit placeat nihil dolorum assumenda quo delectus aspernatur deserunt, quidem mollitia expedita. Perspiciatis laudantium aliquam nam suscipit praesentium est, inventore dolores voluptates sed, unde explicabo neque?
+        </div>  
+        <div class="box">item-1</div>
+           <div class="box">item-2</div>
+           <div class="box">item-3</div>
+           <div class="box">item-4</div>
+           <div class="box">item-5</div>
+           <div class="box">item-6</div>
+           <div class="box">item-7</div>
+           <div class="box">item-8</div>
+           <div class="box">item-9</div>
+           <div class="box">item-10</div>
+           <div class="box">item-11</div>
+           <div class="box">item-12</div>
+           <footer class="box">Lorem ipsum dolor sit amet.</footer>
+    </div>
+</body>
+</html>

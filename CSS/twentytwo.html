@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        h1{
+            text-align: center;
+            font: bolder;
+            color: burlywood;
+        }
+        .container{
+            background-color: greenyellow;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border: 2px solid black;
+            border-radius: 11px;
+            position: relative;
+            animation-name: aniket;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in;
+            animation-delay: 3s;
+            animation-direction: reverse;
+        }
+
+        @keyframes aniket {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1000px;
+            }
+            /* 0%{
+                top: 0px;
+                left: 0%;
+            }
+            25%{
+                 top: 250px;
+                left: 0%;
+            }
+            75%{
+                 top: 0px;
+                left: 100%;
+            }
+            100%
+            {
+                 top: 500px;
+                left: 0%;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations</h1>
+    <div class="container">
+        <div class="box">
+            This is Box
+        </div>
+    </div>
+</body>
+</html>

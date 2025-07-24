@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* Flex Properties  */
+            flex-direction: row;
+            flex-wrap: wrap;   /*to wrap something*/
+            justify-content: center;
+            /* justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around ; */
+            /* align-items: center; */
+            align-items: flex-start;
+        }
+        .item{
+            width: 100px;
+            height: 20px;
+            background-color: coral;
+            border: 2px solid red;
+            margin: 14px;
+            padding: 3px;    
+        }
+        #item1{
+                   order: 2;
+                   flex-grow: 3;
+        }
+        #item2{
+               order: 1;   
+               flex-shrink: 4;
+        }
+        #item3{
+            flex-basis: 320px;
+            flex: 2 2 300px;  /*flex: grow shrink basis*/
+        }
+    </style>
+</head>
+<body>
+    <h1>This is FlexBox</h1>
+    <div class="container">
+        <div class="item" id="item1">one</div>
+        <div class="item" id="item2">two</div>
+        <div class="item" id="item3">three</div>
+        <div class="item" id="item4">four</div>
+        <div class="item" id="item5">five</div>
+    </div>
+</body>
+</html>

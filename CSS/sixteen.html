@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            /* border: 2px solid black; */
+            background-color: burlywood;
+            font-size: 20px;
+            font: bolder;
+            text-align: center;
+            
+        }
+        @media only Screen and (max-width:300px) and (min-width:170px){    /* Media is used to operate particular block within limit*/
+            #box1{
+                display: block;
+                background-color: chocolate;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">First</div>
+    <div class="box" id="box2">Second</div>
+    <div class="box" id="box3">Third</div>
+    <div class="box" id="box4">Fourth</div>
+</body>
+</html>

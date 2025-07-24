@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color:whitesmoke;
+        }
+        .Container{
+            background-color: burlywood;
+            font-size: xx-large;
+            border: 3px violet solid;
+            margin: 34px;
+            /* padding: top right bottom up; */
+            /* padding: 20px 16px 20px 16px; */
+            padding: 16px 19px;
+            border-radius: 11px;
+            width: 500px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+    <h3>This is Box Model</h3>
+    <p id="firstPara">
+        this is another para.
+    </p>
+    </div class="Container">
+
+    <div class="Container">
+        <h3>This Box Model</h3>
+        <p id="secondPara">
+            This Second Para
+        </p>
+    </div>
+</body>
+</html>
